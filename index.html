@@ -1,1 +1,2440 @@
+<header class="rs-header" role="banner">
+  <div class="rs-header__inner">
+
+    <!-- Brand / Logo -->
+    <a class="rs-brand" href="https://kakatbarilea-prog.github.io/bni-homepage/" aria-label="BNI Rock Solid Referrals - Home">
+      <img
+        class="rs-brand__logo"
+        src="https://d34hmiuaex7c0.cloudfront.net/6568/uploads/cmaspages/gallery/galleryitem_1759854726598.png"
+        alt="BNI Rock Solid Referrals"
+      />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="rs-nav" aria-label="Primary navigation">
+      <a class="rs-nav__link is-active" href="https://kakatbarilea-prog.github.io/bni-homepage/">Home</a>
+
+      <!-- Dropdown (CSS-only) -->
+      <div class="rs-nav__dropdown">
+        <a class="rs-nav__link rs-nav__dropbtn" href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/" aria-haspopup="true" aria-expanded="false">
+          Our Chapter
+        </a>
+
+        <div class="rs-nav__menu" role="menu" aria-label="Chapter Members">
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Chapter Leadership</a>
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/">Member Directory</a>
+          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/">Seeks of the Week</a>
+        </div>
+      </div>
+
+      <!-- UPDATED: Meetings & Events Dropdown -->
+      <div class="rs-nav__dropdown">
+        <a class="rs-nav__link rs-nav__dropbtn" href="https://kakatbarilea-prog.github.io/bni-meetings-and-events" aria-haspopup="true" aria-expanded="false">
+          Meetings &amp; Events
+        </a>
+
+        <div class="rs-nav__menu" role="menu" aria-label="Meetings & Events">
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-weekly-meetings">Weekly Meetings</a>
+          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-upcoming-events">Upcoming Events</a>
+          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-member-events">Member Promotions &amp; Events</a>
+          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-post-an-event">Post an Event</a>
+        </div>
+      </div>
+
+      <a class="rs-nav__link" href="https://kakatbarilea-prog.github.io/bni-gallery">Gallery</a>
+      <a class="rs-nav__link" href="https://kakatbarilea-prog.github.io/bni-news">News</a>
+    </nav>
+
+    <!-- Right -->
+    <div class="rs-actions">
+      <a class="rs-btn rs-btn--primary rs-desktopOnly" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsMemberLoginLink">Member Log-in</a>
+
+      <!-- Mobile menu button (JS toggles panel) -->
+      <button class="rs-iconbtn" id="rsMenuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16a1 1 0 1 0 0-2H4a1 1 0 1 0 0 2Zm16 7H4a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2Zm0 7H4a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2Z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Panel -->
+  <div class="rs-mobile" id="rsMobilePanel" hidden>
+    <div class="rs-mobile__inner">
+      <a href="https://kakatbarilea-prog.github.io/bni-homepage/" class="rs-mobile__link">Home</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Our Chapter — Chapter Leadership</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/" class="rs-mobile__link">Our Chapter — Member Directory</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/" class="rs-mobile__link rs-membersOnlyLink">Chapter Members — Seeks of the Week</a>
+
+      <!-- UPDATED: Meetings & Events children in mobile -->
+      <a href="https://kakatbarilea-prog.github.io/bni-weekly-meetings" class="rs-mobile__link">Meetings &amp; Events — Weekly Meetings</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-upcoming-events" class="rs-mobile__link">Meetings &amp; Events — Upcoming Events</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-member-events" class="rs-mobile__link rs-membersOnlyLink">Meetings &amp; Events — Member Promotions &amp; Events</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-post-an-event" class="rs-mobile__link rs-membersOnlyLink">Meetings &amp; Events — Post an Event</a>
+
+      <a href="https://kakatbarilea-prog.github.io/bni-gallery" class="rs-mobile__link">Gallery</a>
+      <a href="https://kakatbarilea-prog.github.io/bni-news" class="rs-mobile__link">News</a>
+
+      <div class="rs-mobile__cta">
+        <a class="rs-btn rs-btn--primary rs-btn--block" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsMemberLoginLinkMobile">Member Log-in</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MEMBERS ONLY POPUP (HEADER VERSION) -->
+<div class="rsH-membersModal" id="rsHMembersModal" hidden aria-hidden="true">
+  <div class="rsH-membersModal__backdrop" data-close="1"></div>
+
+  <div class="rsH-membersModal__card" role="dialog" aria-modal="true" aria-label="Members only">
+    <div class="rsH-membersModal__badge">Members Only</div>
+    <div class="rsH-membersModal__title">This page is available to chapter members.</div>
+    <div class="rsH-membersModal__text">
+      Please log in to access member pages such as Seeks, Member Events, and Event Submissions.
+    </div>
+
+    <div class="rsH-membersModal__actions">
+      <button class="rsH-membersModal__btn rsH-membersModal__btn--secondary" type="button" data-close="1">
+        Close &amp; Continue
+      </button>
+      <a class="rsH-membersModal__btn rsH-membersModal__btn--primary" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsHModalLoginBtn">
+        Member Log-in
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* -------- HEADER ONLY VARIABLES (scoped) -------- */
+  .rs-header{
+    --rs-red:#CF2030;
+    --rs-redDark:#b61b29;
+    --rs-ink:#111827;
+    --rs-line:#E5E7EB;
+    --rs-bg: rgba(255,255,255,.92);
+    --rs-shadow: 0 10px 26px rgba(0,0,0,.10);
+    --rs-h: 78px;
+  }
+
+  /* Scope all typography + box sizing to header only */
+  .rs-header, .rs-header *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+  }
+
+  .rs-header{
+    position:sticky; top:0; z-index:999;
+    width:100%;
+    background: var(--rs-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(229,231,235,.95);
+  }
+
+  .rs-header__inner{
+    width:100%;
+    height:var(--rs-h);
+    padding:0 26px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+  }
+
+  .rs-brand{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    flex:0 0 auto;
+  }
+
+  /* Prevent stretch */
+  .rs-brand__logo{
+    height:40px;
+    width:auto;
+    max-width:220px;
+    object-fit:contain;
+    display:block;
+  }
+
+  .rs-nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    flex:1;
+    min-width:0;
+  }
+
+  .rs-nav__link{
+    display:inline-flex;
+    align-items:center;
+    padding:10px 12px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:14px;
+    color:var(--rs-ink);
+    text-decoration:none;
+    white-space:nowrap;
+    transition:.15s ease;
+  }
+  .rs-nav__link:hover{background:#F6F7FB}
+
+  .rs-nav__link.is-active{position:relative}
+  .rs-nav__link.is-active::after{
+    content:"";
+    position:absolute;
+    left:12px; right:12px; bottom:6px;
+    height:2px;
+    border-radius:999px;
+    background:var(--rs-red);
+  }
+
+  /* Dropdown (CSS-only) with hover bridge */
+  .rs-nav__dropdown{position:relative}
+  .rs-nav__dropbtn{cursor:default}
+
+  .rs-nav__menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    margin-top:8px;
+    min-width:240px;
+    background:#fff;
+    border:1px solid var(--rs-line);
+    border-radius:14px;
+    box-shadow:var(--rs-shadow);
+    padding:8px;
+    display:none;
+    z-index:50;
+  }
+
+  .rs-nav__dropdown::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:100%;
+    width:260px;
+    height:18px;
+    background:transparent;
+    display:none;
+    z-index:40;
+  }
+
+  .rs-nav__menu a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:11px 12px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:14px;
+    color:var(--rs-ink);
+    text-decoration:none;
+    transition:.15s ease;
+  }
+  .rs-nav__menu a:hover{background:#F6F7FB}
+
+  .rs-nav__dropdown:hover .rs-nav__menu,
+  .rs-nav__dropdown:focus-within .rs-nav__menu{
+    display:block;
+  }
+  .rs-nav__dropdown:hover::before,
+  .rs-nav__dropdown:focus-within::before{
+    display:block;
+  }
+
+  .rs-actions{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:10px;
+    flex:0 0 auto;
+  }
+
+  /* Button with hover animation */
+  .rs-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:11px 16px;
+    border-radius:12px;
+    border:1px solid var(--rs-line);
+    background:#fff;
+    font-weight:600;
+    font-size:14px;
+    color:var(--rs-ink);
+    text-decoration:none;
+    white-space:nowrap;
+    position:relative;
+    overflow:hidden;
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  }
+
+  .rs-btn--primary{
+    border-color:transparent;
+    background:var(--rs-red);
+    color:#fff;
+  }
+
+  .rs-btn--primary::after{
+    content:"";
+    position:absolute;
+    top:-30%;
+    left:-60%;
+    width:40%;
+    height:160%;
+    transform: rotate(20deg);
+    background: rgba(255,255,255,.25);
+    opacity:0;
+    transition: opacity .2s ease;
+  }
+
+  .rs-btn--primary:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(0,0,0,.14);
+    filter: brightness(.98);
+  }
+  .rs-btn--primary:hover::after{
+    opacity:1;
+    animation: rsSheen .9s ease forwards;
+  }
+
+  @keyframes rsSheen{
+    0%{left:-60%}
+    100%{left:120%}
+  }
+
+  .rs-desktopOnly{display:inline-flex}
+
+  /* Mobile hamburger */
+  .rs-iconbtn{
+    width:44px;height:44px;
+    border-radius:12px;
+    border:1px solid var(--rs-line);
+    background:#fff;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .rs-iconbtn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(0,0,0,.10);
+  }
+  .rs-iconbtn svg{width:20px;height:20px; fill:#111827; display:block}
+
+  /* Mobile panel */
+  .rs-mobile{
+    border-top:1px solid var(--rs-line);
+    background:#fff;
+  }
+  .rs-mobile__inner{
+    padding:14px 18px 18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .rs-mobile__link{
+    padding:12px 12px;
+    border-radius:12px;
+    font-weight:600;
+    background:#F7F7FA;
+    border:1px solid #EEF0F6;
+    text-decoration:none;
+    color:var(--rs-ink);
+    transition:.15s ease;
+  }
+  .rs-mobile__link:hover{background:#F1F3F8}
+  .rs-mobile__cta{padding-top:6px}
+  .rs-btn--block{width:100%}
+
+  @media (max-width: 980px){
+    .rs-nav{display:none}
+    .rs-iconbtn{display:inline-flex}
+    .rs-desktopOnly{display:none}
+    .rs-header__inner{padding:0 16px}
+    .rs-brand__logo{height:36px; max-width:180px;}
+  }
+
+  @media (max-width: 420px){
+    .rs-header{--rs-h:72px}
+    .rs-brand__logo{max-width:150px;}
+  }
+
+  /* =========================
+     HEADER MODAL (unique classes so nothing overrides it)
+  ========================= */
+  .rsH-membersModal{
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+  }
+  .rsH-membersModal[hidden]{display:none !important;}
+
+  .rsH-membersModal__backdrop{
+    position:absolute;
+    inset:0;
+    background: rgba(17,24,39,.62);
+    backdrop-filter: blur(4px);
+  }
+
+  .rsH-membersModal__card{
+    position:relative;
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+    border:1px solid rgba(229,231,235,.55);
+    background:#fff;
+    box-shadow: 0 22px 56px rgba(0,0,0,.22);
+    padding:18px 18px 16px;
+    text-align:left;
+  }
+
+  .rsH-membersModal__badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 12px;
+    border-radius:999px;
+    font-weight:900;
+    font-size:12px;
+    letter-spacing:.02em;
+    color:#CF2030;
+    background: rgba(207,32,48,.10);
+    border: 1px solid rgba(207,32,48,.18);
+    margin-bottom:12px;
+  }
+
+  .rsH-membersModal__title{
+    font-size:16px;
+    font-weight:900;
+    color:#111827;
+    margin-bottom:8px;
+  }
+
+  .rsH-membersModal__text{
+    font-size:14px;
+    line-height:1.6;
+    color:#4B5563;
+    margin-bottom:14px;
+  }
+
+  .rsH-membersModal__actions{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+
+  .rsH-membersModal__btn{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    padding:11px 14px !important;
+    border-radius:14px !important;
+    font-weight:900 !important;
+    font-size:13px !important;
+    text-decoration:none !important;
+    cursor:pointer !important;
+    border:1px solid #E5E7EB !important;
+    transition:.18s ease !important;
+    flex:1 !important;
+    min-width:160px !important;
+    line-height:1 !important;
+  }
+
+  .rsH-membersModal__btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(0,0,0,.12);
+  }
+
+  .rsH-membersModal__btn--secondary{
+    background:#F3F4F6 !important;
+    color:#111827 !important;
+    border-color:#E5E7EB !important;
+  }
+
+  /* ✅ HARD FIX: anchor login button forced red + white */
+  .rsH-membersModal__btn--primary,
+  a.rsH-membersModal__btn--primary,
+  a#rsHModalLoginBtn{
+    background:#CF2030 !important;
+    color:#ffffff !important;
+    border-color:transparent !important;
+  }
+  .rsH-membersModal__btn--primary:hover,
+  a.rsH-membersModal__btn--primary:hover,
+  a#rsHModalLoginBtn:hover{
+    background:#b61b29 !important;
+    color:#ffffff !important;
+  }
+
+  @media (max-width: 520px){
+    .rsH-membersModal__btn{
+      width:100%;
+      min-width:unset;
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+<script>
+  /* Minimal / necessary only: mobile hamburger open/close */
+  (function(){
+    const btn = document.getElementById('rsMenuBtn');
+    const panel = document.getElementById('rsMobilePanel');
+    if(!btn || !panel) return;
+
+    function close(){
+      panel.setAttribute('hidden','');
+      btn.setAttribute('aria-expanded','false');
+    }
+
+    btn.addEventListener('click', () => {
+      const isHidden = panel.hasAttribute('hidden');
+      if(isHidden){
+        panel.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded','true');
+      }else{
+        close();
+      }
+    });
+
+    panel.addEventListener('click', (e) => {
+      if(e.target && e.target.tagName === 'A') close();
+    });
+
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 980) close();
+    });
+  })();
+
+  // HEADER MODAL GATING
+  (function(){
+    const modal = document.getElementById('rsHMembersModal');
+    if(!modal) return;
+
+    const loginHref =
+      (document.getElementById('rsMemberLoginLink') && document.getElementById('rsMemberLoginLink').getAttribute('href')) ||
+      (document.getElementById('rsMemberLoginLinkMobile') && document.getElementById('rsMemberLoginLinkMobile').getAttribute('href')) ||
+      '#';
+
+    const modalLoginBtn = document.getElementById('rsHModalLoginBtn');
+    if(modalLoginBtn) modalLoginBtn.setAttribute('href', loginHref);
+
+    modal.setAttribute('hidden','');
+    modal.setAttribute('aria-hidden','true');
+
+    function openModal(){
+      modal.removeAttribute('hidden');
+      modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(){
+      modal.setAttribute('hidden','');
+      modal.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', function(e){
+      const gated = e.target.closest('.rs-membersOnlyLink');
+      if(!gated) return;
+      e.preventDefault();
+      openModal();
+    });
+
+    modal.addEventListener('click', function(e){
+      if(e.target && e.target.getAttribute('data-close') === '1') closeModal();
+    });
+
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && !modal.hasAttribute('hidden')) closeModal();
+    });
+  })();
+</script>
+
+
+
+
+<!--start-->
+
+<!-- =========================================================
+BNI ROCK SOLID — GALLERY PAGE (NO HEADER/FOOTER)
+RULES:
+- NO font-weight 800 or 900 anywhere
+- Only weights used: 400 / 500 / 600 / 700
+- No column layouts (stacked sections); grid is OK for galleries
+- Mobile-first, super user friendly, premium motion
+========================================================= -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<section class="rs-galleryPage" aria-label="BNI Rock Solid Gallery">
+
+  <!-- =========================================================
+       1) HERO
+  ========================================================= -->
+  <section class="rs-gHero rs-heroBg" aria-label="Gallery hero">
+    <div class="rs-container">
+
+
+      <h1 class="rs-h1">Gallery</h1>
+      <p class="rs-sub">
+        Explore chapter highlights, weekly meetings, celebrations, and community connections.
+        Tap any photo to view full screen.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       2) STICKY CONTROL BAR
+  ========================================================= -->
+  <section class="rs-gControls" aria-label="Gallery controls">
+    <div class="rs-container">
+      <div class="rs-gControls__bar">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       3) FEATURED HIGHLIGHTS (premium big cards)
+  ========================================================= -->
+  <section class="rs-gFeatured" aria-label="Featured gallery highlights">
+    <div class="rs-container">
+   
+
+      <div class="rs-gFeatStack">
+
+        <!-- Featured card 1 -->
+        <article class="rs-gFeatCard rs-reveal" data-reveal>
+          <div class="rs-gFeatImg" role="img" aria-label="Featured image">
+            <div class="rs-imgPh rs-imgPh--big">
+              <div class="rs-imgPh__label">
+                <strong>IMAGE PLACEHOLDER</strong><br>
+                Size: <strong>1200px × 700px</strong><br>
+                Visual: big chapter group photo / awards moment<br>
+                Style: bright + on brand
+              </div>
+            </div>
+            <div class="rs-gFeatGlow" aria-hidden="true"></div>
+          </div>
+
+          <div class="rs-gFeatInfo">
+            <div class="rs-gFeatTop">
+              <span class="rs-pill"><i class="fa-solid fa-star"></i> Featured</span>
+              <span class="rs-meta">December 2025 • Rock Solid Referrals</span>
+            </div>
+            <h3 class="rs-h3 rs-h3--big">End-of-Year Celebration</h3>
+            <p class="rs-body">
+              A night of wins, laughter, and momentum. This is what community looks like when consistency compounds.
+            </p>
+
+            <div class="rs-gFeatActions">
+              <button class="rs-btn rs-btn--primary rs-btn--sheen" type="button"
+                      data-open-lightbox="feat1" aria-label="View featured photo full screen">
+                <i class="fa-solid fa-expand"></i> View full screen
+              </button>
+              <button class="rs-btn rs-btn--ghost" type="button" data-scroll-to="galleryGrid">
+                <i class="fa-solid fa-images"></i> Browse all photos
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Featured card 2 -->
+        <article class="rs-gFeatCard rs-reveal" data-reveal>
+          <div class="rs-gFeatImg" role="img" aria-label="Featured image">
+            <div class="rs-imgPh rs-imgPh--big">
+              <div class="rs-imgPh__label">
+                <strong>IMAGE PLACEHOLDER</strong><br>
+                Size: <strong>1200px × 700px</strong><br>
+                Visual: weekly meeting / training moment<br>
+                Style: clean + premium
+              </div>
+            </div>
+            <div class="rs-gFeatGlow" aria-hidden="true"></div>
+          </div>
+
+          <div class="rs-gFeatInfo">
+            <div class="rs-gFeatTop">
+              <span class="rs-pill"><i class="fa-solid fa-crown"></i> Chapter culture</span>
+              <span class="rs-meta">Weekly meeting highlight</span>
+            </div>
+            <h3 class="rs-h3 rs-h3--big">Structured. Warm. High-Trust.</h3>
+            <p class="rs-body">
+              Weekly meetings keep the chapter sharp — accountability, education, and referrals that convert.
+            </p>
+
+            <div class="rs-gFeatActions">
+              <button class="rs-btn rs-btn--primary rs-btn--sheen" type="button"
+                      data-open-lightbox="feat2" aria-label="View featured photo full screen">
+                <i class="fa-solid fa-expand"></i> View full screen
+              </button>
+              <a class="rs-btn rs-btn--ghost" href="https://kakatbarilea-prog.github.io/bni-weekly-meetings/" aria-label="Learn about weekly meetings">
+                <i class="fa-regular fa-calendar-check"></i> Weekly meetings
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       4) MAIN GALLERY GRID
+  ========================================================= -->
+  <section class="rs-gGrid" id="galleryGrid" aria-label="All gallery photos">
+    <div class="rs-container">
+      <div class="rs-sectionHead">
+        <h2 class="rs-h2">All Photos</h2>
+
+      </div>
+
+      <!-- Grid -->
+      <div class="rs-gMasonry" id="rsGallery">
+
+        <!-- =========================
+             WEEKLY MEETINGS (10)
+        ========================== -->
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Agenda Kickoff" data-date="2025-12-10"
+                aria-label="Open photo: Weekly Meeting — Agenda Kickoff">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1000px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Agenda Kickoff</div><div class="rs-gMeta">Announcements • Focus</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Member Spotlight" data-date="2025-12-03"
+                aria-label="Open photo: Weekly Meeting — Member Spotlight">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1300px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Member Spotlight</div><div class="rs-gMeta">Business • Wins</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Training Minute" data-date="2025-11-26"
+                aria-label="Open photo: Weekly Meeting — Training Minute">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 900px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Training Minute</div><div class="rs-gMeta">Education • Growth</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Referral Round" data-date="2025-11-19"
+                aria-label="Open photo: Weekly Meeting — Referral Round">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1200px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Referral Round</div><div class="rs-gMeta">Connections • Trust</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Power of One" data-date="2025-11-12"
+                aria-label="Open photo: Weekly Meeting — Power of One">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1100px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Power of One</div><div class="rs-gMeta">Consistency • Results</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Visitor Welcome" data-date="2025-11-05"
+                aria-label="Open photo: Weekly Meeting — Visitor Welcome">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1000px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Visitor Welcome</div><div class="rs-gMeta">Introductions • Energy</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — One-to-Ones" data-date="2025-10-29"
+                aria-label="Open photo: Weekly Meeting — One-to-Ones">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1200px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — One-to-Ones</div><div class="rs-gMeta">Relationships • Clarity</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Speaker Segment" data-date="2025-10-22"
+                aria-label="Open photo: Weekly Meeting — Speaker Segment">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 900px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Speaker Segment</div><div class="rs-gMeta">Value • Visibility</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Thank You Round" data-date="2025-10-15"
+                aria-label="Open photo: Weekly Meeting — Thank You Round">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1100px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Thank You Round</div><div class="rs-gMeta">Gratitude • Trust</div></div>
+          </div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="weekly" data-title="Weekly Meeting — Closing Commitments" data-date="2025-10-08"
+                aria-label="Open photo: Weekly Meeting — Closing Commitments">
+          <div class="rs-gMedia">
+            <div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Weekly Meeting • 1000px × 1000px</div></div>
+          </div>
+          <div class="rs-gOverlay">
+            <div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-regular fa-calendar-check"></i> Weekly</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div>
+            <div class="rs-gOverlayBottom"><div class="rs-gTitle">Weekly Meeting — Closing Commitments</div><div class="rs-gMeta">Execution • Momentum</div></div>
+          </div>
+        </button>
+
+        <!-- =========================
+             EVENTS (10)
+        ========================== -->
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Awards Night — Group Photo" data-date="2025-12-14"
+                aria-label="Open photo: Awards Night — Group Photo">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1200px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Awards Night — Group Photo</div><div class="rs-gMeta">Recognition • Pride</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Holiday Mixer — Networking" data-date="2025-12-07"
+                aria-label="Open photo: Holiday Mixer — Networking">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1000px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Holiday Mixer — Networking</div><div class="rs-gMeta">Warm intros • Fun</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Speaker Series — Key Takeaways" data-date="2025-11-30"
+                aria-label="Open photo: Speaker Series — Key Takeaways">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1300px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Speaker Series — Key Takeaways</div><div class="rs-gMeta">Learning • Growth</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Chapter Anniversary — Toast" data-date="2025-11-16"
+                aria-label="Open photo: Chapter Anniversary — Toast">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 900px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Chapter Anniversary — Toast</div><div class="rs-gMeta">Milestone • Gratitude</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Workshop — Practical Skills" data-date="2025-11-02"
+                aria-label="Open photo: Workshop — Practical Skills">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1100px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Workshop — Practical Skills</div><div class="rs-gMeta">Tools • Execution</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Networking Lunch — Table Talks" data-date="2025-10-20"
+                aria-label="Open photo: Networking Lunch — Table Talks">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1200px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Networking Lunch — Table Talks</div><div class="rs-gMeta">Introductions • Clarity</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Photo Booth — Member Fun" data-date="2025-10-06"
+                aria-label="Open photo: Photo Booth — Member Fun">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1000px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Photo Booth — Member Fun</div><div class="rs-gMeta">Energy • Community</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Ribbon Cutting — Local Biz" data-date="2025-09-14"
+                aria-label="Open photo: Ribbon Cutting — Local Biz">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1300px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Ribbon Cutting — Local Biz</div><div class="rs-gMeta">Support • Momentum</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Fundraiser — Chapter Support" data-date="2025-08-25"
+                aria-label="Open photo: Fundraiser — Chapter Support">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 900px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Fundraiser — Chapter Support</div><div class="rs-gMeta">Give back • Trust</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="events" data-title="Summer Social — Outdoor Meetup" data-date="2025-08-09"
+                aria-label="Open photo: Summer Social — Outdoor Meetup">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Event • 1000px × 1100px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-champagne-glasses"></i> Event</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Summer Social — Outdoor Meetup</div><div class="rs-gMeta">Relationships • Fun</div></div></div>
+        </button>
+
+        <!-- =========================
+             COMMUNITY (10)
+        ========================== -->
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Volunteer Day — Local Outreach" data-date="2025-12-01"
+                aria-label="Open photo: Volunteer Day — Local Outreach">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1200px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Volunteer Day — Local Outreach</div><div class="rs-gMeta">Service • Support</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Local Business Visit" data-date="2025-11-10"
+                aria-label="Open photo: Local Business Visit">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1000px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Local Business Visit</div><div class="rs-gMeta">Partnership • Trust</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Community Partner Shoutout" data-date="2025-10-28"
+                aria-label="Open photo: Community Partner Shoutout">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1300px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Community Partner Shoutout</div><div class="rs-gMeta">Support • Momentum</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Give Back — Donation Drop" data-date="2025-10-12"
+                aria-label="Open photo: Give Back — Donation Drop">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 900px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Give Back — Donation Drop</div><div class="rs-gMeta">Care • Community</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Community Connection — New Member Welcome" data-date="2025-09-26"
+                aria-label="Open photo: Community Connection — New Member Welcome">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1100px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Community Connection — New Member Welcome</div><div class="rs-gMeta">Warmth • Trust</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Community — Partner Visit" data-date="2025-09-08"
+                aria-label="Open photo: Community — Partner Visit">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1200px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Community — Partner Visit</div><div class="rs-gMeta">Relationships • Support</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Community — Referral Success Story" data-date="2025-08-28"
+                aria-label="Open photo: Community — Referral Success Story">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1000px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Community — Referral Success Story</div><div class="rs-gMeta">Results • Trust</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Community — Local Celebration" data-date="2025-08-02"
+                aria-label="Open photo: Community — Local Celebration">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1300px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Community — Local Celebration</div><div class="rs-gMeta">Wins • Together</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Community — Member Collaboration" data-date="2025-07-17"
+                aria-label="Open photo: Community — Member Collaboration">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 900px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Community — Member Collaboration</div><div class="rs-gMeta">Synergy • Trust</div></div></div>
+        </button>
+
+        <button class="rs-gTile rs-reveal" data-reveal type="button"
+                data-tags="community" data-title="Community — Thank You Moment" data-date="2025-07-01"
+                aria-label="Open photo: Community — Thank You Moment">
+          <div class="rs-gMedia"><div class="rs-imgPh rs-imgPh--tile"><div class="rs-imgPh__label"><b>IMAGE PLACEHOLDER</b><br>Community • 1000px × 1100px</div></div></div>
+          <div class="rs-gOverlay"><div class="rs-gOverlayTop"><span class="rs-pill"><i class="fa-solid fa-handshake-angle"></i> Community</span><span class="rs-gZoom"><i class="fa-solid fa-expand"></i></span></div><div class="rs-gOverlayBottom"><div class="rs-gTitle">Community — Thank You Moment</div><div class="rs-gMeta">Gratitude • Community</div></div></div>
+        </button>
+
+      </div>
+
+      <!-- Empty state -->
+      <div class="rs-emptyState" id="rsGEmpty" hidden aria-label="No results">
+        <div class="rs-emptyIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="rs-emptyTitle">No matches found</div>
+        <div class="rs-emptyText">
+          Try another keyword or tap “All” to reset the filters.
+        </div>
+        <button class="rs-emptyBtn" type="button" id="rsGReset">
+          Clear search + filters
+        </button>
+      </div>
+
+      <!-- CTA -->
+      <div class="rs-gCTA rs-reveal" data-reveal aria-label="CTA">
+        <div class="rs-gCTA__card">
+          <div class="rs-gCTA__icon"><i class="fa-solid fa-arrow-up-right-dots"></i></div>
+          <div class="rs-gCTA__title">Want your event featured?</div>
+          <div class="rs-gCTA__text">
+            Members can submit chapter events and promotions so the community stays informed.
+          </div>
+          <a class="rs-btn rs-btn--primary rs-btn--sheen rs-btn--block"
+             href="https://kakatbarilea-prog.github.io/bni-post-an-event/">
+            <i class="fa-solid fa-calendar-plus"></i> Post an Event
+          </a>
+        </div>
+      </div>
+
+      <div style="height:24px;"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       5) LIGHTBOX MODAL (FULL SCREEN)
+  ========================================================= -->
+  <div class="rs-lightbox" id="rsLightbox" hidden aria-hidden="true">
+    <div class="rs-lightbox__backdrop" data-close="1"></div>
+
+    <div class="rs-lightbox__panel" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <div class="rs-lightbox__top">
+        <div class="rs-lightbox__title" id="rsLBTitle">Photo</div>
+        <div class="rs-lightbox__actions">
+          <button class="rs-icBtn" type="button" id="rsLBPrev" aria-label="Previous photo">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="rs-icBtn" type="button" id="rsLBNext" aria-label="Next photo">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="rs-icBtn rs-icBtn--danger" type="button" data-close="1" aria-label="Close viewer">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="rs-lightbox__media" aria-label="Full screen photo">
+        <!-- Placeholder media frame (swap with <img> in your final build) -->
+        <div class="rs-imgPh rs-imgPh--lightbox">
+          <div class="rs-imgPh__label">
+            <strong>IMAGE PLACEHOLDER</strong><br>
+            Full screen photo preview goes here.
+          </div>
+        </div>
+      </div>
+
+      <div class="rs-lightbox__bottom">
+        <div class="rs-lightbox__meta" id="rsLBMeta">Category • Date</div>
+        <button class="rs-btn rs-btn--ghost" type="button" id="rsLBShare" aria-label="Copy share link">
+          <i class="fa-solid fa-link"></i> Copy share link
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       STYLES (scoped)
+  ========================================================= -->
+  <style>
+    .rs-galleryPage{
+      --rs-red:#CF2030;
+      --rs-ink:#111827;
+      --rs-muted:#6B7280;
+      --rs-muted2:#374151;
+      --rs-line:#E5E7EB;
+      --rs-soft:#F6F7FB;
+      --rs-soft2:#FBFBFD;
+
+      --rs-radius:16px;
+      --rs-radius-lg:18px;
+      --rs-radius-xl:24px;
+
+      --rs-shadow: 0 12px 28px rgba(0,0,0,.08);
+      --rs-shadow-soft: 0 10px 18px rgba(0,0,0,.05);
+      --rs-shadow-hover: 0 14px 30px rgba(0,0,0,.10);
+
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--rs-ink);
+      background:#fff;
+    }
+    .rs-galleryPage, .rs-galleryPage *{ box-sizing:border-box; }
+
+    .rs-container{ width:100%; max-width:1200px; margin:0 auto; padding:0 22px; }
+
+    /* Typography */
+    .rs-kicker{
+      font-size:12px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--rs-muted);
+      font-weight:600;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .rs-h1{
+      margin:10px 0 0;
+      font-size:44px;
+      line-height:1.08;
+      letter-spacing:-.03em;
+      font-weight:700;
+    }
+    .rs-h2{
+      margin:0;
+      font-size:28px;
+      letter-spacing:-.02em;
+      line-height:1.2;
+      font-weight:700;
+    }
+    .rs-h3{
+      margin:0;
+      font-size:15px;
+      font-weight:700;
+      letter-spacing:-.01em;
+      line-height:1.35;
+    }
+    .rs-h3--big{ font-size:18px; }
+    .rs-sub{
+      margin:14px 0 0;
+      color:var(--rs-muted);
+      font-size:16px;
+      line-height:1.75;
+      font-weight:400;
+      max-width:820px;
+    }
+    .rs-sub--tight{ max-width:860px; }
+    .rs-body{
+      margin:10px 0 0;
+      font-size:15px;
+      line-height:1.7;
+      color:var(--rs-muted);
+      font-weight:400;
+    }
+    .rs-meta{
+      font-size:13px;
+      color:var(--rs-muted2);
+      font-weight:500;
+      line-height:1.6;
+    }
+
+    /* Hero bg */
+    .rs-heroBg{
+      background:
+        radial-gradient(900px 420px at 15% 0%, rgba(207,32,48,.10), rgba(255,255,255,0) 55%),
+        radial-gradient(900px 420px at 85% 25%, rgba(17,24,39,.06), rgba(255,255,255,0) 55%);
+    }
+
+    /* Chips / pills */
+    .rs-pill, .rs-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      background: rgba(207,32,48,.08);
+      color: var(--rs-red);
+      border:1px solid rgba(207,32,48,.12);
+      font-weight:600;
+      font-size:12px;
+      white-space:nowrap;
+    }
+    .rs-badge--soft{
+      background: rgba(17,24,39,.04);
+      color: var(--rs-muted2);
+      border-color: rgba(17,24,39,.10);
+      font-weight:600;
+    }
+    .rs-chip{
+      cursor:pointer;
+      border:1px solid rgba(17,24,39,.12);
+      background:#fff;
+      padding:10px 12px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:600;
+      color:#374151;
+      transition:.18s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      position:relative;
+      overflow:hidden;
+    }
+    .rs-chip:hover{
+      transform:translateY(-1px);
+      box-shadow:0 10px 18px rgba(0,0,0,.06);
+    }
+    .rs-chip.is-active{
+      background:rgba(207,32,48,.10);
+      color:var(--rs-red);
+      border-color:rgba(207,32,48,.18);
+    }
+
+    /* Buttons */
+    .rs-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:14px;
+      border:1px solid rgba(17,24,39,.12);
+      background:#fff;
+      font-weight:600;
+      font-size:14px;
+      color:var(--rs-ink);
+      text-decoration:none;
+      white-space:nowrap;
+      position:relative;
+      overflow:hidden;
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+      gap:10px;
+      cursor:pointer;
+    }
+    .rs-btn:hover{ transform: translateY(-1px); box-shadow: var(--rs-shadow-hover); }
+
+    .rs-btn--primary{
+      background:var(--rs-red);
+      color:#fff;
+      border-color:transparent;
+      font-weight:700;
+    }
+    .rs-btn--primary:hover{ filter:brightness(.98); }
+    .rs-btn--ghost{
+      background:#fff;
+      border:1px solid var(--rs-line);
+      color:var(--rs-ink);
+    }
+    .rs-btn--block{ width:100%; }
+
+    .rs-btn--sheen::after{
+      content:"";
+      position:absolute;
+      top:-30%;
+      left:-60%;
+      width:40%;
+      height:160%;
+      transform: rotate(20deg);
+      background: rgba(255,255,255,.25);
+      opacity:0;
+    }
+    .rs-btn--sheen:hover::after{
+      opacity:1;
+      animation: rsSheen .9s ease forwards;
+    }
+    @keyframes rsSheen{
+      0%{left:-60%}
+      100%{left:120%}
+    }
+
+    /* Image placeholders */
+    .rs-imgPh{
+      width:100%;
+      border-radius:18px;
+      border:1px dashed rgba(17,24,39,.22);
+      background: linear-gradient(180deg, #fff, #FBFBFD);
+      box-shadow: 0 12px 26px rgba(0,0,0,.06);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      text-align:center;
+      color:#6B7280;
+      line-height:1.5;
+      position:relative;
+      overflow:hidden;
+    }
+    .rs-imgPh::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0));
+      transform: translateX(-120%);
+      animation: rsShimmer 2.2s ease-in-out infinite;
+      opacity:.55;
+      pointer-events:none;
+    }
+    @keyframes rsShimmer{
+      0%{ transform: translateX(-120%); }
+      55%{ transform: translateX(120%); }
+      100%{ transform: translateX(120%); }
+    }
+    .rs-imgPh__label{ font-size:13px; max-width:520px; font-weight:500; }
+    .rs-imgPh--big{ height:360px; border-radius:22px; }
+    .rs-imgPh--tile{ height:300px; border-radius:18px; }
+    .rs-imgPh--lightbox{ height:62vh; min-height:320px; border-radius:20px; }
+
+    /* Sections */
+    .rs-sectionHead{ padding-top:20px; }
+    .rs-gHero{ padding:52px 0 18px; }
+    .rs-gHero__chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    .rs-gHero__meta{ display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; }
+
+    /* Sticky control bar */
+    .rs-gControls{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background: rgba(255,255,255,.86);
+      backdrop-filter: blur(10px);
+      border-top:1px solid rgba(17,24,39,.06);
+      border-bottom:1px solid rgba(17,24,39,.08);
+      padding:12px 0;
+    }
+    .rs-gControls__bar{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    /* Search bar */
+    .rs-searchBar{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      border:1px solid rgba(17,24,39,.10);
+      border-radius:16px;
+      padding:10px 12px;
+      background:#fff;
+      box-shadow: 0 12px 26px rgba(0,0,0,.05);
+    }
+    .rs-searchBar:focus-within{
+      border-color: rgba(207,32,48,.28);
+      box-shadow: 0 14px 30px rgba(207,32,48,.10);
+    }
+    .rs-searchIcon{
+      opacity:.75;
+      font-size:16px;
+      color:#374151;
+      width:22px;
+      display:inline-flex;align-items:center;justify-content:center;
+    }
+    .rs-searchBar input{
+      border:none;
+      outline:none;
+      font-size:14px;
+      font-weight:400;
+      flex:1;
+      padding:10px 6px;
+      min-width:160px;
+    }
+    .rs-clearBtn{
+      width:38px;height:38px;
+      border-radius:12px;
+      border:1px solid rgba(17,24,39,.10);
+      background: rgba(17,24,39,.04);
+      color:#374151;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      transition:.18s ease;
+    }
+    .rs-clearBtn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 12px 22px rgba(0,0,0,.10);
+    }
+
+    /* Sort */
+    .rs-gSortWrap{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .rs-fieldLabel{
+      font-weight:700;
+      font-size:13px;
+      letter-spacing:.02em;
+      color:#111827;
+    }
+    .rs-select{
+      width:100%;
+      border-radius:16px;
+      border:1px solid rgba(17,24,39,.12);
+      background:#fff;
+      padding:12px 14px;
+      font-size:14px;
+      font-weight:500;
+      outline:none;
+      transition: box-shadow .18s ease, border-color .18s ease;
+      appearance:none;
+      background-image:
+        linear-gradient(45deg, transparent 50%, #6B7280 50%),
+        linear-gradient(135deg, #6B7280 50%, transparent 50%),
+        linear-gradient(to right, transparent, transparent);
+      background-position:
+        calc(100% - 20px) calc(50% - 3px),
+        calc(100% - 14px) calc(50% - 3px),
+        100% 0;
+      background-size:
+        6px 6px,
+        6px 6px,
+        2.5em 2.5em;
+      background-repeat:no-repeat;
+    }
+    .rs-select:focus{
+      border-color: rgba(207,32,48,.28);
+      box-shadow: 0 14px 30px rgba(207,32,48,.10);
+    }
+
+    /* Featured section */
+    .rs-gFeatured{ padding:6px 0 12px; }
+    .rs-gFeatStack{ display:flex; flex-direction:column; gap:16px; margin-top:14px; }
+
+    .rs-gFeatCard{
+      border:1px solid rgba(17,24,39,.10);
+      border-radius:24px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow: var(--rs-shadow);
+      position:relative;
+      transform-origin:center;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .rs-gFeatCard:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 18px 44px rgba(0,0,0,.12);
+    }
+    .rs-gFeatImg{ position:relative; }
+    .rs-gFeatGlow{
+      position:absolute;
+      inset:-60px -60px auto -60px;
+      height:180px;
+      background: radial-gradient(circle at 20% 40%, rgba(207,32,48,.22), rgba(255,255,255,0) 60%);
+      pointer-events:none;
+      filter: blur(2px);
+    }
+    .rs-gFeatInfo{ padding:16px; }
+    .rs-gFeatTop{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:8px;
+    }
+    .rs-gFeatActions{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    /* Status row */
+    .rs-gGrid{ padding:6px 0 20px; }
+    .rs-gStatus{
+      margin-top:12px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:18px;
+      border:1px solid rgba(17,24,39,.10);
+      background: linear-gradient(180deg, #fff, #FBFBFD);
+      box-shadow: var(--rs-shadow-soft);
+    }
+    .rs-gCount{
+      font-size:13px;
+      font-weight:600;
+      color:#111827;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .rs-gCount b{ font-weight:700; }
+    .rs-gHint{
+      font-size:13px;
+      font-weight:500;
+      color:var(--rs-muted2);
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    /* Masonry grid (responsive) */
+    .rs-gMasonry{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+
+    /* Tile */
+    .rs-gTile{
+      border:1px solid rgba(17,24,39,.10);
+      border-radius:22px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow: var(--rs-shadow-soft);
+      padding:0;
+      cursor:pointer;
+      text-align:left;
+      position:relative;
+      transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+      transform: translateZ(0);
+    }
+    .rs-gTile:hover{
+      transform: translateY(-2px);
+      box-shadow: var(--rs-shadow);
+      filter: brightness(.995);
+    }
+    .rs-gMedia{ position:relative; }
+    .rs-gOverlay{
+      position:absolute;
+      inset:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      padding:12px;
+      background: linear-gradient(180deg, rgba(17,24,39,.02), rgba(17,24,39,.32));
+      opacity:1;
+    }
+    .rs-gOverlayTop{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .rs-gZoom{
+      width:40px;height:40px;border-radius:14px;
+      background: rgba(255,255,255,.92);
+      border:1px solid rgba(17,24,39,.10);
+      display:flex;align-items:center;justify-content:center;
+      color:#111827;
+      box-shadow: 0 12px 26px rgba(0,0,0,.10);
+      transform: translateY(0);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .rs-gTile:hover .rs-gZoom{
+      transform: translateY(-1px);
+      box-shadow: 0 16px 34px rgba(0,0,0,.14);
+    }
+    .rs-gOverlayBottom{
+      color:#fff;
+      text-shadow: 0 8px 22px rgba(0,0,0,.35);
+    }
+    .rs-gTitle{
+      font-weight:700;
+      font-size:14px;
+      letter-spacing:-.01em;
+      line-height:1.25;
+    }
+    .rs-gMeta{
+      margin-top:5px;
+      font-weight:500;
+      font-size:12px;
+      opacity:.92;
+    }
+
+    /* Empty state */
+    .rs-emptyState{
+      margin-top:14px;
+      padding:22px;
+      border-radius:18px;
+      border:1px solid rgba(17,24,39,.10);
+      background: linear-gradient(180deg, #fff, #FBFBFD);
+      box-shadow: 0 12px 26px rgba(0,0,0,.06);
+      text-align:center;
+    }
+    .rs-emptyIcon{
+      width:54px;height:54px;
+      border-radius:18px;
+      background: rgba(207,32,48,.10);
+      color: var(--rs-red);
+      display:flex;align-items:center;justify-content:center;
+      margin:0 auto 12px;
+      font-size:18px;
+      font-weight:700;
+    }
+    .rs-emptyTitle{ font-weight:700; font-size:16px; margin-bottom:6px; }
+    .rs-emptyText{ color:var(--rs-muted); font-size:13px; line-height:1.6; margin-bottom:14px; font-weight:400; }
+    .rs-emptyBtn{
+      border:none;
+      background: var(--rs-red);
+      color:#fff;
+      font-weight:700;
+      font-size:13px;
+      padding:11px 14px;
+      border-radius:14px;
+      cursor:pointer;
+      transition:.18s ease;
+    }
+    .rs-emptyBtn:hover{
+      filter:brightness(.98);
+      transform: translateY(-1px);
+      box-shadow: 0 14px 26px rgba(207,32,48,.18);
+    }
+
+    /* CTA card */
+    .rs-gCTA{ margin-top:16px; }
+    .rs-gCTA__card{
+      border:1px solid rgba(17,24,39,.10);
+      border-radius:24px;
+      background: linear-gradient(180deg, #fff, #FBFBFD);
+      box-shadow: var(--rs-shadow);
+      padding:16px;
+      text-align:left;
+      position:relative;
+      overflow:hidden;
+    }
+    .rs-gCTA__card::before{
+      content:"";
+      position:absolute;
+      top:-80px;
+      right:-80px;
+      width:220px;height:220px;
+      background: radial-gradient(circle, rgba(207,32,48,.18), rgba(255,255,255,0) 60%);
+      pointer-events:none;
+    }
+    .rs-gCTA__icon{
+      width:54px;height:54px;
+      border-radius:18px;
+      background: rgba(207,32,48,.10);
+      color: var(--rs-red);
+      display:flex;align-items:center;justify-content:center;
+      font-size:18px;
+      font-weight:700;
+      margin-bottom:10px;
+    }
+    .rs-gCTA__title{ font-weight:700; font-size:18px; letter-spacing:-.02em; }
+    .rs-gCTA__text{ margin-top:8px; font-weight:400; font-size:14px; color:var(--rs-muted); line-height:1.65; }
+
+    /* Lightbox */
+    .rs-lightbox{
+      position:fixed;
+      inset:0;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+    }
+    .rs-lightbox[hidden]{ display:none !important; }
+    .rs-lightbox__backdrop{
+      position:absolute;
+      inset:0;
+      background: rgba(17,24,39,.70);
+      backdrop-filter: blur(8px);
+    }
+    .rs-lightbox__panel{
+      position:relative;
+      width:100%;
+      max-width:980px;
+      border-radius:24px;
+      border:1px solid rgba(229,231,235,.55);
+      background:#fff;
+      box-shadow: 0 22px 56px rgba(0,0,0,.22);
+      overflow:hidden;
+      transform: translateY(10px) scale(.985);
+      opacity:0;
+      animation: rsPop .22s ease forwards;
+    }
+    @keyframes rsPop{
+      to{ transform: translateY(0) scale(1); opacity:1; }
+    }
+    .rs-lightbox__top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      padding:12px 12px;
+      border-bottom:1px solid rgba(17,24,39,.08);
+      background: linear-gradient(180deg, #fff, #FBFBFD);
+    }
+    .rs-lightbox__title{
+      font-weight:700;
+      font-size:14px;
+      color:#111827;
+      padding-left:6px;
+    }
+    .rs-lightbox__actions{ display:flex; gap:10px; flex-wrap:wrap; }
+    .rs-icBtn{
+      width:44px;height:44px;
+      border-radius:14px;
+      border:1px solid rgba(17,24,39,.10);
+      background:#fff;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      transition:.18s ease;
+      color:#111827;
+    }
+    .rs-icBtn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 12px 22px rgba(0,0,0,.12);
+    }
+    .rs-icBtn--danger{
+      background: rgba(207,32,48,.08);
+      color: var(--rs-red);
+      border-color: rgba(207,32,48,.16);
+    }
+    .rs-lightbox__media{ padding:14px; }
+    .rs-lightbox__bottom{
+      padding:12px 14px 14px;
+      border-top:1px solid rgba(17,24,39,.08);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+      background: #fff;
+    }
+    .rs-lightbox__meta{
+      font-weight:500;
+      font-size:13px;
+      color:var(--rs-muted2);
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    /* Reveal animations (premium) */
+    .rs-reveal{
+      opacity:0;
+      transform: translateY(12px);
+      transition: opacity .55s ease, transform .55s ease;
+      will-change: opacity, transform;
+    }
+    .rs-reveal.is-in{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      .rs-imgPh::after{ animation:none; }
+      .rs-reveal{ opacity:1; transform:none; transition:none; }
+      .rs-lightbox__panel{ animation:none; opacity:1; transform:none; }
+      .rs-gTile, .rs-btn, .rs-chip, .rs-clearBtn, .rs-icBtn{ transition:none; }
+    }
+
+    /* Responsive */
+    @media (min-width: 720px){
+      .rs-gControls__bar{ flex-direction:row; align-items:flex-end; gap:14px; }
+      .rs-searchBar{ flex:1; }
+      .rs-gSortWrap{ width:260px; }
+      .rs-gFeatActions{ flex-direction:row; }
+      .rs-gMasonry{ grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1020px){
+      .rs-gMasonry{ grid-template-columns: repeat(3, 1fr); }
+      .rs-imgPh--tile{ height:320px; }
+      .rs-imgPh--big{ height:380px; }
+    }
+    @media (max-width: 520px){
+      .rs-container{ padding:0 16px; }
+      .rs-h1{ font-size:32px; letter-spacing:-.02em; }
+      .rs-lightbox{ padding:12px; }
+      .rs-imgPh--lightbox{ height:56vh; }
+      .rs-lightbox__actions{ gap:8px; }
+      .rs-icBtn{ width:42px;height:42px;border-radius:14px; }
+      .rs-gOverlay{ padding:10px; }
+    }
+  </style>
+
+  <!-- =========================================================
+       JS: filtering, searching, sorting, lightbox + swipe
+  ========================================================= -->
+  <script>
+    (function(){
+      const gallery = document.getElementById('rsGallery');
+      if(!gallery) return;
+
+      const tiles = Array.from(gallery.querySelectorAll('.rs-gTile'));
+      const chips = Array.from(document.querySelectorAll('.rs-gHero__chips .rs-chip'));
+      const searchInput = document.getElementById('rsGSearch');
+      const clearBtn = document.getElementById('rsGClear');
+      const sortSelect = document.getElementById('rsGSort');
+      const empty = document.getElementById('rsGEmpty');
+      const reset = document.getElementById('rsGReset');
+      const count = document.getElementById('rsGCount');
+
+      // Lightbox
+      const lb = document.getElementById('rsLightbox');
+      const lbTitle = document.getElementById('rsLBTitle');
+      const lbMeta = document.getElementById('rsLBMeta');
+      const lbPrev = document.getElementById('rsLBPrev');
+      const lbNext = document.getElementById('rsLBNext');
+      const lbShare = document.getElementById('rsLBShare');
+
+      // Featured lightbox buttons
+      const openLBBtns = Array.from(document.querySelectorAll('[data-open-lightbox]'));
+
+      // Scroll to
+      document.addEventListener('click', function(e){
+        const btn = e.target.closest('[data-scroll-to]');
+        if(!btn) return;
+        const id = btn.getAttribute('data-scroll-to');
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+
+      // State
+      let activeFilter = 'all';
+      let query = '';
+      let activeIndex = -1;
+
+      // Helpers
+      function normalize(s){ return (s || '').toLowerCase().trim(); }
+      function tileTitle(t){ return normalize(t.getAttribute('data-title')); }
+      function tileTags(t){ return normalize(t.getAttribute('data-tags')); }
+      function tileDate(t){ return (t.getAttribute('data-date') || '').trim(); }
+
+      function applySort(list){
+        const mode = sortSelect ? sortSelect.value : 'newest';
+        const copy = list.slice();
+
+        if(mode === 'featured'){
+          // Featured first: items tagged with awards or events float up
+          copy.sort((a,b)=>{
+            const af = /awards|events|featured/.test(tileTags(a)) ? 1 : 0;
+            const bf = /awards|events|featured/.test(tileTags(b)) ? 1 : 0;
+            if(af !== bf) return bf - af;
+            return tileDate(b).localeCompare(tileDate(a));
+          });
+          return copy;
+        }
+
+        if(mode === 'oldest'){
+          copy.sort((a,b)=> tileDate(a).localeCompare(tileDate(b)));
+          return copy;
+        }
+
+        // newest default
+        copy.sort((a,b)=> tileDate(b).localeCompare(tileDate(a)));
+        return copy;
+      }
+
+      function matchesFilter(tile){
+        if(activeFilter === 'all') return true;
+        return tileTags(tile).includes(activeFilter);
+      }
+
+      function matchesQuery(tile){
+        if(!query) return true;
+        const hay = (tileTitle(tile) + ' ' + tileTags(tile));
+        return hay.includes(query);
+      }
+
+      function updateCount(n){
+        if(!count) return;
+        count.innerHTML = '<i class="fa-solid fa-filter"></i> Showing <b>' + n + '</b> photos';
+      }
+
+      function render(){
+        // Filter list
+        let visible = tiles.filter(t => matchesFilter(t) && matchesQuery(t));
+
+        // Sort
+        visible = applySort(visible);
+
+        // Re-append in sorted order
+        visible.forEach(t => gallery.appendChild(t));
+
+        // Show/hide
+        tiles.forEach(t => t.style.display = 'none');
+        visible.forEach(t => t.style.display = '');
+
+        updateCount(visible.length);
+
+        const showEmpty = visible.length === 0;
+        if(empty) empty.hidden = !showEmpty;
+
+        // For lightbox navigation
+        currentVisible = visible;
+      }
+
+      // Chips
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('is-active'));
+          chip.classList.add('is-active');
+          activeFilter = chip.getAttribute('data-filter') || 'all';
+          render();
+        });
+      });
+
+      // Search
+      if(searchInput){
+        searchInput.addEventListener('input', () => {
+          query = normalize(searchInput.value);
+          render();
+        });
+      }
+      if(clearBtn){
+        clearBtn.addEventListener('click', () => {
+          if(searchInput) searchInput.value = '';
+          query = '';
+          render();
+          if(searchInput) searchInput.focus();
+        });
+      }
+
+      // Reset empty state
+      if(reset){
+        reset.addEventListener('click', () => {
+          query = '';
+          activeFilter = 'all';
+          if(searchInput) searchInput.value = '';
+          if(sortSelect) sortSelect.value = 'newest';
+          chips.forEach(c => c.classList.remove('is-active'));
+          const allChip = chips.find(c => c.getAttribute('data-filter') === 'all');
+          if(allChip) allChip.classList.add('is-active');
+          render();
+        });
+      }
+
+      // Sort change
+      if(sortSelect){
+        sortSelect.addEventListener('change', () => render());
+      }
+
+      // Reveal on scroll
+      const revealEls = Array.from(document.querySelectorAll('[data-reveal]'));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(en => {
+          if(en.isIntersecting){
+            en.target.classList.add('is-in');
+            io.unobserve(en.target);
+          }
+        });
+      }, {threshold: 0.14});
+      revealEls.forEach(el => io.observe(el));
+
+      // Lightbox visible list
+      let currentVisible = tiles.slice();
+
+      function openLightboxByTile(tile){
+        if(!lb) return;
+
+        activeIndex = currentVisible.indexOf(tile);
+        if(activeIndex < 0){
+          currentVisible = tiles.filter(t => t.style.display !== 'none');
+          activeIndex = currentVisible.indexOf(tile);
+        }
+
+        const title = tile.getAttribute('data-title') || 'Photo';
+        const tags = (tile.getAttribute('data-tags') || '').split(',')[0] || 'Gallery';
+        const date = tile.getAttribute('data-date') || '';
+
+        lbTitle.textContent = title;
+        lbMeta.textContent = (tags ? tags.trim() : 'Gallery') + (date ? ' • ' + date : '');
+
+        lb.hidden = false;
+        lb.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox(){
+        if(!lb) return;
+        lb.hidden = true;
+        lb.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+      }
+
+      function navLightbox(dir){
+        if(!currentVisible.length) return;
+        activeIndex = (activeIndex + dir + currentVisible.length) % currentVisible.length;
+        const tile = currentVisible[activeIndex];
+        if(!tile) return;
+
+        const title = tile.getAttribute('data-title') || 'Photo';
+        const tags = (tile.getAttribute('data-tags') || '').split(',')[0] || 'Gallery';
+        const date = tile.getAttribute('data-date') || '';
+
+        lbTitle.textContent = title;
+        lbMeta.textContent = (tags ? tags.trim() : 'Gallery') + (date ? ' • ' + date : '');
+      }
+
+      // Tile click opens lightbox
+      tiles.forEach(tile => {
+        tile.addEventListener('click', () => openLightboxByTile(tile));
+      });
+
+      // Featured lightbox open
+      openLBBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Just open first visible tile as a "demo" anchor
+          const first = tiles.find(t => t.style.display !== 'none') || tiles[0];
+          if(first) openLightboxByTile(first);
+        });
+      });
+
+      // Lightbox controls
+      if(lbPrev) lbPrev.addEventListener('click', () => navLightbox(-1));
+      if(lbNext) lbNext.addEventListener('click', () => navLightbox(1));
+
+      // Close actions
+      if(lb){
+        lb.addEventListener('click', (e) => {
+          if(e.target && e.target.getAttribute('data-close') === '1') closeLightbox();
+        });
+      }
+      document.addEventListener('keydown', (e) => {
+        if(!lb || lb.hidden) return;
+        if(e.key === 'Escape') closeLightbox();
+        if(e.key === 'ArrowLeft') navLightbox(-1);
+        if(e.key === 'ArrowRight') navLightbox(1);
+      });
+
+      // Share link (copy)
+      if(lbShare){
+        lbShare.addEventListener('click', async () => {
+          try{
+            await navigator.clipboard.writeText(window.location.href);
+            lbShare.innerHTML = '<i class="fa-solid fa-check"></i> Link copied';
+            setTimeout(() => {
+              lbShare.innerHTML = '<i class="fa-solid fa-link"></i> Copy share link';
+            }, 1400);
+          }catch(err){
+            lbShare.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Copy failed';
+            setTimeout(() => {
+              lbShare.innerHTML = '<i class="fa-solid fa-link"></i> Copy share link';
+            }, 1400);
+          }
+        });
+      }
+
+      // Swipe in lightbox (mobile)
+      let touchX = null;
+      if(lb){
+        lb.addEventListener('touchstart', (e) => {
+          if(!e.touches || !e.touches[0]) return;
+          touchX = e.touches[0].clientX;
+        }, {passive:true});
+        lb.addEventListener('touchend', (e) => {
+          if(touchX === null) return;
+          const endX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : null;
+          if(endX === null) return;
+          const dx = endX - touchX;
+          touchX = null;
+          if(Math.abs(dx) < 42) return;
+          if(dx > 0) navLightbox(-1);
+          else navLightbox(1);
+        }, {passive:true});
+      }
+
+      // Initial render
+      render();
+    })();
+  </script>
+
+</section>
+
+
+<!--end-->
+
+
+
+<footer class="rs-footer" role="contentinfo">
+  <div class="rs-footer__inner">
+
+    <div class="rs-footer__grid">
+
+      <!-- Brand -->
+      <div class="rs-footer__brand">
+        <img
+          class="rs-footer__logo"
+          src="https://d34hmiuaex7c0.cloudfront.net/6568/uploads/cmaspages/gallery/galleryitem_1768573585550.515"
+          alt="BNI Rock Solid Referrals"
+        />
+        <p class="rs-footer__desc">
+          BNI Rock Solid Referrals is a structured network of trusted local professionals —
+          built on consistency, credibility, and referrals that convert.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div class="rs-footer__col">
+        <h4>Explore</h4>
+        <a href="https://kakatbarilea-prog.github.io/bni-homepage/">Home</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Chapter Leadership</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-weekly-meetings">Weekly Meetings</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-upcoming-events">Upcoming Events</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-gallery">Gallery</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-news">News</a>
+      </div>
+
+      <!-- Members -->
+      <div class="rs-footer__col">
+        <h4>Members</h4>
+        <a href="https://kakatbarilea-prog.github.io/bni-member-login">Member Log-in</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/">Member Directory</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-request-1-1" class="rs-membersOnlyLink">Request a 1-to-1</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-share-a-referral" class="rs-membersOnlyLink">Share a Referral</a>
+
+        <!-- ✅ ADDED HERE per your request -->
+        <a href="https://kakatbarilea-prog.github.io/bni-member-events" class="rs-membersOnlyLink">Member Promotions &amp; Events</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-post-an-event" class="rs-membersOnlyLink">Post an Event</a>
+
+        <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-page/" class="rs-membersOnlyLink">Submit Seek of the Week</a>
+        <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/" class="rs-membersOnlyLink">View Seeks of the Week</a>
+      </div>
+
+    </div>
+
+    <div class="rs-footer__bottom">
+      <div class="rs-footer__bottomLeft">
+        © <span id="rsFooterYear"></span> BNI Rock Solid Referrals&nbsp;&nbsp;•&nbsp;&nbsp;Powered by Segwik
+      </div>
+
+      <div class="rs-footer__bottomRight">
+        <a href="#">Privacy Policy</a>
+        <span class="rs-footer__sep">|</span>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- MEMBERS ONLY POPUP (FOOTER VERSION) -->
+<div class="rsF-membersModal" id="rsFMembersModal" hidden aria-hidden="true">
+  <div class="rsF-membersModal__backdrop" data-close="1"></div>
+
+  <div class="rsF-membersModal__card" role="dialog" aria-modal="true" aria-label="Members only">
+    <div class="rsF-membersModal__badge">Members Only</div>
+    <div class="rsF-membersModal__title">This page is available to chapter members.</div>
+    <div class="rsF-membersModal__text">
+      Please log in to access member pages such as Seeks, Member Events, and Event Submissions.
+    </div>
+
+    <div class="rsF-membersModal__actions">
+      <button class="rsF-membersModal__btn rsF-membersModal__btn--secondary" type="button" data-close="1">
+        Close &amp; Continue
+      </button>
+      <a class="rsF-membersModal__btn rsF-membersModal__btn--primary" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsFModalLoginBtn">
+        Member Log-in
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* -------- FOOTER ONLY VARIABLES (scoped) -------- */
+  .rs-footer{
+    --rs-red:#CF2030;
+    --rs-bg:#333333;
+    --rs-text:#ffffff;
+    --rs-muted: rgba(255,255,255,.82);
+    --rs-line: rgba(255,255,255,.14);
+  }
+
+  /* Scope all typography + box sizing to footer only */
+  .rs-footer, .rs-footer *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+  }
+
+  .rs-footer{
+    width:100%;
+    background: var(--rs-bg);
+    color: var(--rs-text);
+    border-top: 4px solid var(--rs-red);
+  }
+
+  .rs-footer__inner{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:42px 22px 18px;
+  }
+
+  .rs-footer__grid{
+    display:grid;
+    grid-template-columns: 2.2fr 1fr 1fr;
+    gap:28px;
+    align-items:start;
+  }
+
+  .rs-footer__logo{
+    height:34px;
+    width:auto;
+    max-width:220px;
+    object-fit:contain;
+    display:block;
+  }
+
+  .rs-footer__desc{
+    margin:12px 0 0;
+    font-weight:400;
+    font-size:14px;
+    line-height:1.6;
+    max-width:560px;
+    color: var(--rs-muted);
+  }
+
+  .rs-footer__col h4{
+    margin:0 0 12px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:#fff;
+    position:relative;
+  }
+  .rs-footer__col h4::after{
+    content:"";
+    display:block;
+    width:42px;
+    height:2px;
+    border-radius:999px;
+    background: var(--rs-red);
+    margin-top:10px;
+    opacity:.95;
+  }
+
+  .rs-footer__col a{
+    display:block;
+    width:max-content;
+    margin:10px 0;
+    font-weight:400;
+    font-size:14px;
+    color: var(--rs-muted);
+    text-decoration:none;
+    transition:.15s ease;
+  }
+  .rs-footer__col a:hover{
+    color:#fff;
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+
+  .rs-footer__bottom{
+    margin-top:22px;
+    padding-top:14px;
+    border-top:1px solid var(--rs-line);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    font-size:13px;
+    color: var(--rs-muted);
+  }
+
+  .rs-footer__bottomLeft{font-weight:400}
+
+  .rs-footer__bottomRight{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:400;
+  }
+  .rs-footer__bottomRight a{
+    color: var(--rs-muted);
+    text-decoration:none;
+    transition:.15s ease;
+  }
+  .rs-footer__bottomRight a:hover{
+    color:#fff;
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  .rs-footer__sep{opacity:.5}
+
+  @media (max-width: 860px){
+    .rs-footer__grid{
+      grid-template-columns: 1fr 1fr;
+    }
+    .rs-footer__brand{
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 520px){
+    .rs-footer__inner{
+      padding:34px 16px 14px;
+    }
+
+    .rs-footer__grid{
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+
+    .rs-footer__col{
+      padding-top:10px;
+      border-top:1px solid rgba(255,255,255,.10);
+    }
+
+    .rs-footer__col a{
+      width:100%;
+      padding:10px 0;
+      margin:0;
+    }
+
+    .rs-footer__bottom{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:8px;
+    }
+  }
+
+  /* =========================
+     FOOTER MODAL (unique classes)
+  ========================= */
+  .rsF-membersModal{
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+  }
+  .rsF-membersModal[hidden]{display:none !important;}
+
+  .rsF-membersModal__backdrop{
+    position:absolute;
+    inset:0;
+    background: rgba(17,24,39,.62);
+    backdrop-filter: blur(4px);
+  }
+
+  .rsF-membersModal__card{
+    position:relative;
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+    border:1px solid rgba(229,231,235,.55);
+    background:#fff;
+    box-shadow: 0 22px 56px rgba(0,0,0,.22);
+    padding:18px 18px 16px;
+    text-align:left;
+  }
+
+  .rsF-membersModal__badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 12px;
+    border-radius:999px;
+    font-weight:900;
+    font-size:12px;
+    letter-spacing:.02em;
+    color:#CF2030;
+    background: rgba(207,32,48,.10);
+    border: 1px solid rgba(207,32,48,.18);
+    margin-bottom:12px;
+  }
+
+  .rsF-membersModal__title{
+    font-size:16px;
+    font-weight:900;
+    color:#111827;
+    margin-bottom:8px;
+  }
+
+  .rsF-membersModal__text{
+    font-size:14px;
+    line-height:1.6;
+    color:#4B5563;
+    margin-bottom:14px;
+  }
+
+  .rsF-membersModal__actions{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:8px;
+  }
+
+  .rsF-membersModal__btn{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    padding:11px 14px !important;
+    border-radius:14px !important;
+    font-weight:900 !important;
+    font-size:13px !important;
+    text-decoration:none !important;
+    cursor:pointer !important;
+    border:1px solid #E5E7EB !important;
+    transition:.18s ease !important;
+    flex:1 !important;
+    min-width:160px !important;
+    line-height:1 !important;
+  }
+
+  .rsF-membersModal__btn--secondary{
+    background:#F3F4F6 !important;
+    color:#111827 !important;
+    border-color:#E5E7EB !important;
+  }
+
+  /* ✅ HARD FIX: anchor login button forced red + white */
+  .rsF-membersModal__btn--primary,
+  a.rsF-membersModal__btn--primary,
+  a#rsFModalLoginBtn{
+    background:#CF2030 !important;
+    color:#ffffff !important;
+    border-color:transparent !important;
+  }
+  .rsF-membersModal__btn--primary:hover,
+  a.rsF-membersModal__btn--primary:hover,
+  a#rsFModalLoginBtn:hover{
+    background:#b61b29 !important;
+    color:#ffffff !important;
+  }
+</style>
+
+<script>
+  document.getElementById("rsFooterYear").textContent = new Date().getFullYear();
+
+  // FOOTER MODAL GATING (self-contained)
+  (function(){
+    const modal = document.getElementById('rsFMembersModal');
+    if(!modal) return;
+
+    const modalLoginBtn = document.getElementById('rsFModalLoginBtn');
+    if(modalLoginBtn) modalLoginBtn.setAttribute('href', '#');
+
+    modal.setAttribute('hidden','');
+    modal.setAttribute('aria-hidden','true');
+
+    function openModal(){
+      modal.removeAttribute('hidden');
+      modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(){
+      modal.setAttribute('hidden','');
+      modal.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', function(e){
+      const gated = e.target.closest('.rs-membersOnlyLink');
+      if(!gated) return;
+      e.preventDefault();
+      openModal();
+    });
+
+    modal.addEventListener('click', function(e){
+      if(e.target && e.target.getAttribute('data-close') === '1') closeModal();
+    });
+
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && !modal.hasAttribute('hidden')) closeModal();
+    });
+  })();
+</script>
 
